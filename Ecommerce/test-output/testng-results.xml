@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15740" started-at="2019-10-18T11:10:37 EET" finished-at="2019-10-18T11:10:52 EET">
+  <suite name="Default suite" duration-ms="11537" started-at="2019-10-18T11:48:01 EET" finished-at="2019-10-18T11:48:12 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15740" started-at="2019-10-18T11:10:37 EET" finished-at="2019-10-18T11:10:52 EET">
+    <test name="Default test" duration-ms="11537" started-at="2019-10-18T11:48:01 EET" finished-at="2019-10-18T11:48:12 EET">
       <class name="tests.UserRegistrationTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="startDriver" is-config="true" duration-ms="40635" started-at="2019-10-18T11:09:56 EET" finished-at="2019-10-18T11:10:37 EET">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="startDriver" is-config="true" duration-ms="38345" started-at="2019-10-18T11:47:22 EET" finished-at="2019-10-18T11:48:01 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="UserRegisterSuccessfully" duration-ms="15677" started-at="2019-10-18T11:10:37 EET" finished-at="2019-10-18T11:10:52 EET">
+        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="UserRegisterSuccessfully" duration-ms="11487" started-at="2019-10-18T11:48:01 EET" finished-at="2019-10-18T11:48:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserRegisterSuccessfully -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="closeDriver" is-config="true" duration-ms="165" started-at="2019-10-18T11:10:52 EET" finished-at="2019-10-18T11:10:53 EET">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.UserRegistrationTest@61f8bee4]" name="closeDriver" is-config="true" duration-ms="114" started-at="2019-10-18T11:48:12 EET" finished-at="2019-10-18T11:48:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
