@@ -9,13 +9,12 @@ import org.openqa.selenium.support.FindBy;
 public class PageBase {
 	
 	static public WebDriver driver;
-	WebElement registerLink=driver.findElement(By.linkText("Register"));
-	
+
 	// Create Constructor paramaterized "take web driver as parameter"
 	public PageBase(WebDriver driver) {
-	    this.driver=driver;
+	  
 	    
-	 //   PageFactory.initElements(driver, this);
+	  PageFactory.initElements(driver, this);
 	}; 
 
 }
