@@ -55,7 +55,7 @@ public class UserRegistrationPage extends PageBase{
 	WebElement confirmPassword;
 	
 	@FindBy(id="register-button")
-	WebElement Register;
+	WebElement Registerbtn;
 	
 	@FindBy(css="div.result")
 	public WebElement successmessage;
@@ -76,7 +76,7 @@ public class UserRegistrationPage extends PageBase{
 	
 	public void Register()
 	{
-		clickbtn(Register);
+		clickbtn(Registerbtn);
 	}
 	
 	
