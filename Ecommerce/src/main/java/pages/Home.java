@@ -20,7 +20,7 @@ public class Home extends PageBase {
 	//method that click on link 
 	public void openRegistrationPage()
 	{
-		registerLink.click();
+		clickbtn(registerLink);
 	}
 	
 }

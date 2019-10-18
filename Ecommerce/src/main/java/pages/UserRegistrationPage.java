@@ -61,19 +61,19 @@ public class UserRegistrationPage extends PageBase{
 	
 	public void MandatoryFields(String Fname,String Lname, String mail, String pass, String cpass) {
 		
-		gender.click();
-		FirstName.sendKeys(Fname);
-		LastName.sendKeys(Lname);
-		Email.sendKeys(mail);
-		password.sendKeys(pass);
-		confirmPassword.sendKeys(cpass);
+		clickbtn(gender);
+		InputSendKey(FirstName, Fname);
+	    InputSendKey(LastName, Lname);
+		InputSendKey(Email, mail);
+		InputSendKey(password, pass);
+		InputSendKey(confirmPassword, cpass);
 		
 	}
 	
 	
 	public void Register()
 	{
-		Register.click();
+		clickbtn(Register);
 	}
 	
 	
