@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import pages.Home;
@@ -16,8 +17,10 @@ public class UserRegistrationTest extends TestBase{
 		homeObject=new Home(driver);
 		homeObject.openRegistrationPage();
 		RegisterObject=new UserRegistrationPage(driver);
-		RegisterObject.MandatoryFields("Hadeer","Gamal","hadeer@gmail.com", "123", "123");
+		RegisterObject.MandatoryFields("Hadeer","Gamal","hadeer23@gmail.com", "123456", "123456");
 		RegisterObject.Register();
+		Assert.assertTrue(RegisterObject.successmessage.getText().contains("completed"));
+		
 	}
 
 }

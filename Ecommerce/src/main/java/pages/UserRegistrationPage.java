@@ -57,6 +57,9 @@ public class UserRegistrationPage extends PageBase{
 	@FindBy(id="register-button")
 	WebElement Register;
 	
+	@FindBy(css="div.result")
+	public WebElement successmessage;
+	
 	
 	
 	public void MandatoryFields(String Fname,String Lname, String mail, String pass, String cpass) {
