@@ -8,6 +8,7 @@
           <include name="startDriver"/>
           <include name="changePass"/>
           <include name="RegisteredUserCanLogin"/>
+          <include name="ScreenShotOnFailure"/>
           <include name="RegisteredUserCanLogout"/>
           <include name="closeDriver"/>
           <include name="UserRegisterSuccessfully"/>

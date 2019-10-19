@@ -2,10 +2,14 @@ package tests;
 
 import java.util.concurrent.TimeUnit;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
+
+import utilities.Hepler;
 
 public class TestBase {
 
@@ -40,5 +44,19 @@ public class TestBase {
 	public void closeDriver() {
 		driver.quit();
 	}
+	
+	//take screenshot when test fail and put it in folder
+	// w bta5od parameter mn interface mwgod fl testng hwa l bib2a shail l resuly
+	@AfterMethod
+	public void ScreenShotOnFailure(ITestResult result)
+	{
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			System.out.println("failed");
+			Hepler.CaptureScreenshot(driver,result.getName());
+			
+		}
+	}
+	
 
 }
