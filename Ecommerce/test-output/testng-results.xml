@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce regression suit" duration-ms="22257" started-at="2019-10-18T20:36:17 EET" finished-at="2019-10-18T20:36:40 EET">
+  <suite name="Default suite" duration-ms="13676" started-at="2019-10-19T18:08:11 EET" finished-at="2019-10-19T18:08:24 EET">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22257" started-at="2019-10-18T20:36:17 EET" finished-at="2019-10-18T20:36:40 EET">
-      <class name="tests.UserRegistrationTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTest@5b87ed94]" name="startDriver" is-config="true" duration-ms="47659" started-at="2019-10-18T20:35:30 EET" finished-at="2019-10-18T20:36:17 EET">
+    <test name="Default test" duration-ms="13676" started-at="2019-10-19T18:08:11 EET" finished-at="2019-10-19T18:08:24 EET">
+      <class name="tests.ChangePassTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangePassTest@5b87ed94]" name="startDriver" is-config="true" duration-ms="8375" started-at="2019-10-19T18:08:02 EET" finished-at="2019-10-19T18:08:11 EET">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:0, instance:tests.UserRegistrationTest@5b87ed94]" name="UserRegisterSuccessfully" duration-ms="22205" started-at="2019-10-18T20:36:18 EET" finished-at="2019-10-18T20:36:40 EET">
+        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@5b87ed94]" name="UserRegisterSuccessfully" duration-ms="5844" started-at="2019-10-19T18:08:11 EET" finished-at="2019-10-19T18:08:17 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserRegisterSuccessfully -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.UserRegistrationTest@5b87ed94]" name="closeDriver" is-config="true" duration-ms="124" started-at="2019-10-18T20:36:40 EET" finished-at="2019-10-18T20:36:40 EET">
+        <test-method status="PASS" signature="changePass()[pri:0, instance:tests.ChangePassTest@5b87ed94]" name="changePass" duration-ms="3302" started-at="2019-10-19T18:08:17 EET" depends-on-methods="tests.ChangePassTest.UserRegisterSuccessfully" finished-at="2019-10-19T18:08:20 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePass -->
+        <test-method status="PASS" signature="RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@5b87ed94]" name="RegisteredUserCanLogout" duration-ms="1654" started-at="2019-10-19T18:08:20 EET" depends-on-methods="tests.ChangePassTest.changePass" finished-at="2019-10-19T18:08:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogout -->
+        <test-method status="PASS" signature="RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@5b87ed94]" name="RegisteredUserCanLogin" duration-ms="2808" started-at="2019-10-19T18:08:22 EET" depends-on-methods="tests.ChangePassTest.RegisteredUserCanLogout" finished-at="2019-10-19T18:08:24 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogin -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.ChangePassTest@5b87ed94]" name="closeDriver" is-config="true" duration-ms="126" started-at="2019-10-19T18:08:25 EET" finished-at="2019-10-19T18:08:25 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- tests.UserRegistrationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- nopcommerce regression suit -->
+      </class> <!-- tests.ChangePassTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

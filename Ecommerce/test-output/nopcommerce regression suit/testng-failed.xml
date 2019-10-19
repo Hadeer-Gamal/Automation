@@ -9,6 +9,8 @@
           <include name="startDriver"/>
           <include name="UserRegisterSuccessfully"/>
           <include name="closeDriver"/>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="RegisteredUserCanLogin"/>
         </methods>
       </class> <!-- tests.UserRegistrationTest -->
     </classes>
