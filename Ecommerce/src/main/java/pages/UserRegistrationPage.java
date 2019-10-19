@@ -26,7 +26,7 @@ public class UserRegistrationPage extends PageBase{
 	
 	@FindBy(id="LastName")
 	WebElement LastName;
-	
+	/*
 	@FindBy(name="DateOfBirthDay")
 	WebElement DayOfBirth;
 	Select Day=new Select(DayOfBirth);
@@ -37,16 +37,16 @@ public class UserRegistrationPage extends PageBase{
 	
 	@FindBy(name="DateOfBirthYear")
 	WebElement YearOfBirth;
-	Select year=new Select(YearOfBirth);
+	Select year=new Select(YearOfBirth);*/
 	
 	@FindBy(id="Email")
 	WebElement Email;
-	
+/*	
 	@FindBy(id="Company")
 	WebElement Companyname;
 	
 	@FindBy(id="Newsletter")
-	WebElement newsletter;
+	WebElement newsletter;*/
 	
 	@FindBy(id="Password")
 	WebElement password;
@@ -59,6 +59,9 @@ public class UserRegistrationPage extends PageBase{
 	
 	@FindBy(css="div.result")
 	public WebElement successmessage;
+	
+	@FindBy(linkText="Log out")
+	public WebElement logoutlink;
 	
 	
 	
@@ -77,6 +80,11 @@ public class UserRegistrationPage extends PageBase{
 	public void Register()
 	{
 		clickbtn(Registerbtn);
+	}
+	
+	public void logout()
+	{
+		clickbtn(logoutlink);
 	}
 	
 	
