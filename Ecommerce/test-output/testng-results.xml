@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" ignored="0" total="4" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12038" started-at="2019-10-19T19:32:48 EET" finished-at="2019-10-19T19:33:00 EET">
+  <suite name="Default suite" duration-ms="12050" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:30 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12038" started-at="2019-10-19T19:32:48 EET" finished-at="2019-10-19T19:33:00 EET">
+    <test name="Default test" duration-ms="12050" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:30 EET">
       <class name="tests.ChangePassTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="startDriver" is-config="true" duration-ms="14681" started-at="2019-10-19T19:32:33 EET" finished-at="2019-10-19T19:32:48 EET">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="startDriver" is-config="true" duration-ms="11350" started-at="2019-10-20T12:27:06 EET" finished-at="2019-10-20T12:27:18 EET">
           <params>
             <param index="0">
               <value>
@@ -18,241 +18,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="FAIL" signature="UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@6e0e048a]" name="UserRegisterSuccessfully" duration-ms="11931" started-at="2019-10-19T19:32:48 EET" finished-at="2019-10-19T19:33:00 EET">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate an element using css selector=div.result
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hadeer.local', ip: 'fdf4:e3fb:2bc3:6c00:a8d5:df9c:5f73:af66%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using css selector=div.result
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hadeer.local', ip: 'fdf4:e3fb:2bc3:6c00:a8d5:df9c:5f73:af66%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_191'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.getText(Unknown Source)
-at tests.ChangePassTest.UserRegisterSuccessfully(ChangePassTest.java:30)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@23e028a9]" name="UserRegisterSuccessfully" duration-ms="4454" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:22 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserRegisterSuccessfully -->
-        <test-method status="FAIL" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="ScreenShotOnFailure" is-config="true" duration-ms="28" started-at="2019-10-19T19:33:00 EET" finished-at="2019-10-19T19:33:00 EET">
+        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="2" started-at="2019-10-20T12:27:22 EET" finished-at="2019-10-20T12:27:22 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserRegisterSuccessfully status=FAILURE method=ChangePassTest.UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@6e0e048a] output={null}]]]>
+                <![CDATA[[TestResult name=UserRegisterSuccessfully status=SUCCESS method=ChangePassTest.UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.120)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hadeer.local', ip: 'fdf4:e3fb:2bc3:6c00:a8d5:df9c:5f73:af66%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/pz/tq28mg_n4bl...}, goog:chromeOptions: {debuggerAddress: localhost:49778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 60cbb6024aa250faf482fcb80c5a7f40]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=77.0.3865.120)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hadeer.local', ip: 'fdf4:e3fb:2bc3:6c00:a8d5:df9c:5f73:af66%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/pz/tq28mg_n4bl...}, goog:chromeOptions: {debuggerAddress: localhost:49778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 60cbb6024aa250faf482fcb80c5a7f40
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at utilities.Hepler.CaptureScreenshot(Hepler.java:28)
-at tests.TestBase.ScreenShotOnFailure(TestBase.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShotOnFailure -->
-        <test-method status="SKIP" signature="changePass()[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="changePass" duration-ms="0" started-at="2019-10-19T19:33:00 EET" depends-on-methods="tests.ChangePassTest.UserRegisterSuccessfully" finished-at="2019-10-19T19:33:00 EET">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ChangePassTest.changePass()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ChangePassTest.changePass()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="changePass()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="changePass" duration-ms="3795" started-at="2019-10-20T12:27:22 EET" depends-on-methods="tests.ChangePassTest.UserRegisterSuccessfully" finished-at="2019-10-20T12:27:26 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePass -->
-        <test-method status="SKIP" signature="RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="RegisteredUserCanLogout" duration-ms="0" started-at="2019-10-19T19:33:00 EET" depends-on-methods="tests.ChangePassTest.changePass" finished-at="2019-10-19T19:33:00 EET">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ChangePassTest.RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ChangePassTest.RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2019-10-20T12:27:26 EET" finished-at="2019-10-20T12:27:26 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=changePass status=SUCCESS method=ChangePassTest.changePass()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+        <test-method status="PASS" signature="RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="RegisteredUserCanLogout" duration-ms="1618" started-at="2019-10-20T12:27:26 EET" depends-on-methods="tests.ChangePassTest.changePass" finished-at="2019-10-20T12:27:28 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisteredUserCanLogout -->
-        <test-method status="SKIP" signature="RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="RegisteredUserCanLogin" duration-ms="0" started-at="2019-10-19T19:33:00 EET" depends-on-methods="tests.ChangePassTest.RegisteredUserCanLogout" finished-at="2019-10-19T19:33:00 EET">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method ChangePassTest.RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ChangePassTest.RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@6e0e048a] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2019-10-20T12:27:28 EET" finished-at="2019-10-20T12:27:28 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=ChangePassTest.RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+        <test-method status="PASS" signature="RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="RegisteredUserCanLogin" duration-ms="2134" started-at="2019-10-20T12:27:28 EET" depends-on-methods="tests.ChangePassTest.RegisteredUserCanLogout" finished-at="2019-10-20T12:27:30 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisteredUserCanLogin -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.ChangePassTest@6e0e048a]" name="closeDriver" is-config="true" duration-ms="162" started-at="2019-10-19T19:33:00 EET" finished-at="2019-10-19T19:33:00 EET">
+        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2019-10-20T12:27:30 EET" finished-at="2019-10-20T12:27:30 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogin status=SUCCESS method=ChangePassTest.RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="closeDriver" is-config="true" duration-ms="730" started-at="2019-10-20T12:27:30 EET" finished-at="2019-10-20T12:27:30 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

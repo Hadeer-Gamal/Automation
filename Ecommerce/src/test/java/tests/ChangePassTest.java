@@ -14,7 +14,7 @@ public class ChangePassTest extends TestBase{
 	MyAccountPage MyAccountPageObject;
 	UserRegistrationPage RegisterObject;
 	LoginPage loginObject;
-	String Email="bogy123@gmail.com";
+	String Email="bogy1110@gmail.com";
 	String oldpass="123456";
 	String newpass="12345678" ;
 	

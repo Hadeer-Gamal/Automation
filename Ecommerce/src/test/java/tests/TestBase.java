@@ -15,7 +15,8 @@ public class TestBase {
 
 	// Driver Set up
 	public static WebDriver driver;
-	String DriverDriectory = System.getProperty("user.dir") + "/Drivers/macdrivers/";
+	//String DriverDriectory = System.getProperty("user.dir") + "/Drivers/macdrivers/";
+	String DriverDriectory = System.getProperty("user.dir") + "/Drivers/";
 
 	@BeforeSuite
 	
@@ -27,7 +28,7 @@ public class TestBase {
 		// In case of each browser run according its corresponding driver 
 		if (browsername.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", DriverDriectory + "chromedriver");
+			System.setProperty("webdriver.chrome.driver", DriverDriectory + "chromedriver.exe");
 			driver = new ChromeDriver();
 		} 
 		else if (browsername.equalsIgnoreCase("firefox"))
