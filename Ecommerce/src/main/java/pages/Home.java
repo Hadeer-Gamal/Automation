@@ -13,7 +13,7 @@ public class Home extends PageBase {
 		super(driver);
 	}
 	//by pageFactory 
-		@FindBy(linkText="Register")
+		@FindBy(css="a.ico-register")
 		 WebElement registerLink;
 		
 	@FindBy(linkText="Log in")

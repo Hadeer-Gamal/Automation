@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12050" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:30 EET">
+  <suite name="Default suite" duration-ms="15733" started-at="2019-12-18T15:23:34 EET" finished-at="2019-12-18T15:23:50 EET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12050" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:30 EET">
-      <class name="tests.ChangePassTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="startDriver" is-config="true" duration-ms="11350" started-at="2019-10-20T12:27:06 EET" finished-at="2019-10-20T12:27:18 EET">
+    <test name="Default test" duration-ms="15733" started-at="2019-12-18T15:23:34 EET" finished-at="2019-12-18T15:23:50 EET">
+      <class name="tests.UserRegistrationTestwithDDAndFileProperties">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTestwithDDAndFileProperties@5bc79255]" name="startDriver" is-config="true" duration-ms="9252" started-at="2019-12-18T15:23:25 EET" finished-at="2019-12-18T15:23:34 EET">
           <params>
             <param index="0">
               <value>
@@ -18,71 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@23e028a9]" name="UserRegisterSuccessfully" duration-ms="4454" started-at="2019-10-20T12:27:18 EET" finished-at="2019-10-20T12:27:22 EET">
+        <test-method status="PASS" signature="UserRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationTestwithDDAndFileProperties@5bc79255]" name="UserRegisterSuccessfully" duration-ms="15673" started-at="2019-12-18T15:23:34 EET" finished-at="2019-12-18T15:23:50 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserRegisterSuccessfully -->
-        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="2" started-at="2019-10-20T12:27:22 EET" finished-at="2019-10-20T12:27:22 EET">
+        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestwithDDAndFileProperties@5bc79255]" name="ScreenShotOnFailure" is-config="true" duration-ms="3" started-at="2019-12-18T15:23:50 EET" finished-at="2019-12-18T15:23:50 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserRegisterSuccessfully status=SUCCESS method=ChangePassTest.UserRegisterSuccessfully()[pri:1, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
+                <![CDATA[[TestResult name=UserRegisterSuccessfully status=SUCCESS method=UserRegistrationTestwithDDAndFileProperties.UserRegisterSuccessfully()[pri:1, instance:tests.UserRegistrationTestwithDDAndFileProperties@5bc79255] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShotOnFailure -->
-        <test-method status="PASS" signature="changePass()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="changePass" duration-ms="3795" started-at="2019-10-20T12:27:22 EET" depends-on-methods="tests.ChangePassTest.UserRegisterSuccessfully" finished-at="2019-10-20T12:27:26 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changePass -->
-        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2019-10-20T12:27:26 EET" finished-at="2019-10-20T12:27:26 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=changePass status=SUCCESS method=ChangePassTest.changePass()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenShotOnFailure -->
-        <test-method status="PASS" signature="RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="RegisteredUserCanLogout" duration-ms="1618" started-at="2019-10-20T12:27:26 EET" depends-on-methods="tests.ChangePassTest.changePass" finished-at="2019-10-20T12:27:28 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisteredUserCanLogout -->
-        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2019-10-20T12:27:28 EET" finished-at="2019-10-20T12:27:28 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=ChangePassTest.RegisteredUserCanLogout()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenShotOnFailure -->
-        <test-method status="PASS" signature="RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="RegisteredUserCanLogin" duration-ms="2134" started-at="2019-10-20T12:27:28 EET" depends-on-methods="tests.ChangePassTest.RegisteredUserCanLogout" finished-at="2019-10-20T12:27:30 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisteredUserCanLogin -->
-        <test-method status="PASS" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangePassTest@23e028a9]" name="ScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2019-10-20T12:27:30 EET" finished-at="2019-10-20T12:27:30 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RegisteredUserCanLogin status=SUCCESS method=ChangePassTest.RegisteredUserCanLogin()[pri:0, instance:tests.ChangePassTest@23e028a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenShotOnFailure -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.ChangePassTest@23e028a9]" name="closeDriver" is-config="true" duration-ms="730" started-at="2019-10-20T12:27:30 EET" finished-at="2019-10-20T12:27:30 EET">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.UserRegistrationTestwithDDAndFileProperties@5bc79255]" name="closeDriver" is-config="true" duration-ms="813" started-at="2019-12-18T15:23:50 EET" finished-at="2019-12-18T15:23:51 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- tests.ChangePassTest -->
+      </class> <!-- tests.UserRegistrationTestwithDDAndFileProperties -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
