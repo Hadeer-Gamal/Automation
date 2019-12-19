@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.UserRegistrationTestwithDDAndFileProperties">
+      <class name="tests.UserRegistrationTestDDTAndExcelFile">
         <methods>
           <include name="startDriver"/>
           <include name="ScreenShotOnFailure"/>
           <include name="closeDriver"/>
-          <include name="UserRegisterSuccessfully"/>
+          <include name="UserRegisterSuccessfully" invocation-numbers="2"/>
         </methods>
-      </class> <!-- tests.UserRegistrationTestwithDDAndFileProperties -->
+      </class> <!-- tests.UserRegistrationTestDDTAndExcelFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
