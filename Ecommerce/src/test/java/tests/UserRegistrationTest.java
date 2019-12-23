@@ -26,13 +26,13 @@ public class UserRegistrationTest extends TestBase{
 		RegisterObject.MandatoryFields("Hadeer","Gamal",email,password,password);
 		RegisterObject.Register();
 		Assert.assertTrue(RegisterObject.successmessage.getText().contains("completed"));
-		
+		RegisterObject.logout();
 	}
 	
 	@Test(dependsOnMethods = ("UserRegisterSuccessfully"))
 	public void RegisteredUserCanLogout()
 	{
-		RegisterObject.logout();
+		
 		
 	}
 	
