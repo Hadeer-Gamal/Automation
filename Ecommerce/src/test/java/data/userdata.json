@@ -1,21 +1,16 @@
-
-{
-"registrationdata":
 [
 {
 "firstname":"jason",
 "lastname":"selenium",
-"email":"jason@selenium.com",
+"email":"jason33@selenium.com",
 "password":"12345678"
-
 },
 
 {
 "firstname":"jason",
 "lastname":"selenium",
-"email":"jason@selenium.com",
+"email":"jason123@selenium.com",
 "password":"12345678"
 
 }
 ]
-}

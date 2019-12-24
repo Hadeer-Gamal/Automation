@@ -1,42 +1,36 @@
 package tests;
 
-import org.testng.annotations.Test;
-import org.json.simple.parser.ParseException;
-import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.json.simple.parser.ParseException;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
-import data.jsonReader;
-
-
+import data.JasonDataReader;
 import pages.Home;
-
 import pages.UserRegistrationPage;
 
-public class UserRegistrationTestDDTAndJasonFiles extends TestBase{
+public class UserRegistrationTestDDTANDJason extends TestBase{
 	Home homeObject;
 	UserRegistrationPage RegisterObject;
-	jsonReader reader;
 	
 	
 	@Test(priority=1)
 	public void UserRegisterSuccessfully() throws FileNotFoundException, IOException, ParseException
 	{
-		reader=new jsonReader();
-		reader.jsondataReader();
+		JasonDataReader jsonReader=new JasonDataReader();
+		jsonReader.JasonReader();
 		homeObject=new Home(driver);
 		homeObject.openRegistrationPage();
 		RegisterObject=new UserRegistrationPage(driver);
-	//	RegisterObject.MandatoryFields(reader.);
+		RegisterObject.MandatoryFields(jsonReader.firstname,jsonReader.lastname,jsonReader.email,jsonReader.password,jsonReader.password);
 		RegisterObject.Register();
-		AssertJUnit.assertTrue(RegisterObject.successmessage.getText().contains("completed"));
+		Assert.assertTrue(RegisterObject.successmessage.getText().contains("completed"));
 		RegisterObject.logout();
 	}
 	
 	
-
 }
-;
